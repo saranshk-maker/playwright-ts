@@ -1,6 +1,6 @@
 export const LT_CREDENTIALS = {
-  user: 'saranshk',
-  accessKey: 'LT_6r3XXEyw1QLdiD5db07Z33y3LVWq9Ue6CAuUzFty8zDUUxC',
+  user: '',
+  accessKey: '',
 };
 
 export const COMMON_LT_OPTIONS = {
