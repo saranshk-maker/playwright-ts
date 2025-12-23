@@ -1,0 +1,31 @@
+{
+  "name": "playwright-mobile-test",
+  "version": "1.0.0",
+  "description": "Playwright iOS & Android Real Device Tests on LambdaTest",
+  "scripts": {
+    "test:ios": "cross-env TARGET=ios ts-node runner.ts",
+    "test:android": "cross-env TARGET=android ts-node runner.ts",
+    "test:desktop": "cross-env TARGET=desktop ts-node runner.ts",
+    "test:ios:test1": "cross-env TARGET=ios TEST_FILE=test1.ts ts-node runner.ts",
+    "test:android:test1": "cross-env TARGET=android TEST_FILE=test1.ts ts-node runner.ts",
+    "test:desktop:test1": "cross-env TARGET=desktop TEST_FILE=test1.ts ts-node runner.ts",
+
+    "test:local:chromium": "cross-env BROWSER=chromium ts-node runner.local.ts",
+    "test:local:firefox": "cross-env BROWSER=firefox ts-node runner.local.ts",
+    "test:local:webkit": "cross-env BROWSER=webkit ts-node runner.local.ts",
+    "test:local:chromium:test1": "cross-env BROWSER=chromium TEST_FILE=test1.ts ts-node runner.local.ts",
+    "test:local:firefox:test1": "cross-env BROWSER=firefox TEST_FILE=test1.ts ts-node runner.local.ts",
+    "test:local:webkit:test1": "cross-env BROWSER=webkit TEST_FILE=test1.ts ts-node runner.local.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "expect": "^29.6.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "playwright": "^1.53.2"
+  }
+}
